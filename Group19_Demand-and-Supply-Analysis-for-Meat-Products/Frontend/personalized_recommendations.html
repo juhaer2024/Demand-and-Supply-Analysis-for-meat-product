@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit your Meat productions issues  and get responses from Goverment Officers  through MeatFlow.">
+    <title>Personal Recommendations | MeatFlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="personalized_recommendation_style.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="logo.png" alt="MeatFlow Logo" class="nav-logo">
+                <ul class="nav-items">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="#recommendation-form">Submit Problem</a></li>
+                    <li><a href="#responses">Responses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="databaseicon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <ul class="nav-items">
+                    <li><a href="login.html" class="btn-signin">Sign in</a></li>
+                    <li><a href="contact.html" class="btn-primary">Get in touch</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Get Tailored Farming Advice<br>
+                <span class="highlight_h1">Personal Recommendations</span>
+            </h1>
+            <p>Submit your meat product issues and receive expert guidance from Government Officers.</p>
+            <a href="#recommendation-form" class="cta-button">Submit Your Problem</a>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <main>
+        <section id="recommendation-form" class="feature-section">
+            <div class="box">
+                <h2>Submit Your Problem</h2>
+                <form id="problemForm">
+                    <div class="form-group">
+                        <label for="farmID">Farm ID:</label>
+                        <input type="text" id="farmID" name="farmID" required placeholder="Enter your ID">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="meatType">Meat Type:</label>
+                        <input type="text" id="meatType" name="meatType" required placeholder="Enter the meat type">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="problemDescription">Describe Your Problem:</label>
+                        <textarea id="problemDescription" name="problemDescription" rows="5" required placeholder="Describe your problem in detail"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Submit Problem</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Responses Section -->
+        <section id="responses" class="feature-section">
+            <div class="box">
+                <h2>Responses from Goverment Offices </h2>
+                <div class="response">
+                    <h3>Response to Farmer XYZ</h3>
+                    <p><strong>meat:</strong> Wheat</p>
+                    <p><strong>Problem:</strong> Pest infestation</p>
+                    <p><strong>Response:</strong> We recommend using organic pesticide X. Further assistance will be provided by the local Goverment office.</p>
+                    <hr>
+                </div>
+                <!-- Additional responses can be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Meatflow. All rights reserved.</p>
+    </footer>
+
+    <script src="recommendations.js"></script>
+</body>
+</html>

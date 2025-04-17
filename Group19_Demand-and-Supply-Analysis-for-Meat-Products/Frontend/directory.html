@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buyer & Seller Directory | MeatFlow</title>
+  <link rel="stylesheet" href="directory_style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="logo.png" alt="MeatFlow Logo" />
+        <h2>MeatFlow</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="homepage.html">Home</a>
+        <a href="supply.html">Supply</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="analytics.html">Analytics</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container">
+      <header>
+        <h1>Buyer & Seller Directory</h1>
+        <p>Search and explore MeatFlow sellers across regions.</p>
+      </header>
+
+      <!-- Search Box -->
+      <section class="content-box">
+        <h2>Search Directory</h2>
+        <form class="search-form">
+          <input type="text" placeholder="Search by name or product..." />
+          <select>
+            <option value="">Category</option>
+            <option>Farmer</option>
+            <option>Retailer</option>
+            <option>Wholesaler</option>
+          </select>
+          <select>
+            <option value="">Location</option>
+            <option>Dhaka</option>
+            <option>Chattogram</option>
+            <option>Rajshahi</option>
+            <option>Comilla</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+      </section>
+
+      <!-- Buyer Info Section -->
+      <section class="content-box">
+        <h2>For Buyers</h2>
+        <ul>
+          <li>Find fresh, organic meat products with special categories.</li>
+          <li>Browse verified seller profiles and listings.</li>
+          <li>Filter by product type, location, and price.</li>
+          <li>Contact sellers directly to place your order.</li>
+        </ul>
+      </section>
+
+      <!-- Seller Info Section -->
+      <section class="content-box">
+        <h2>For Sellers</h2>
+        <ul>
+          <li>List your meat products and reach more buyers.</li>
+          <li>Showcase your farm or business with detailed listings.</li>
+          <li>Gain visibility and build long-term relationships.</li>
+          <li>Respond to buyers and grow your customer base.</li>
+        </ul>
+      </section>
+
+      <!-- Seller Cards -->
+      <section class="content-box">
+        <h2>Featured Sellers</h2>
+        <div class="card-grid">
+          <div class="user-card">
+            <img src="assets/seller1.jpg" alt="RuralGoat Farm" />
+            <h3>RuralGoat Farm</h3>
+            <p><strong>Region:</strong> Comilla</p>
+            <p><strong>Products:</strong> Goat Meat, Chicken</p>
+            <p><strong>Contact:</strong> 018XXXXXXXX</p>
+            <a href="farmersdashboard.html" class="feature-box">Visit Dashboard</a>
+          </div>
+
+          <div class="user-card">
+            <img src="assets/seller2.jpg" alt="GreenField Meats" />
+            <h3>GreenField Meats</h3>
+            <p><strong>Region:</strong> Rajshahi</p>
+            <p><strong>Products:</strong> Beef, Mutton</p>
+            <p><strong>Contact:</strong> 017XXXXXXXX</p>
+            <a href="wholesalerdashboard.html" class="feature-box">Visit Dashboard</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Navigation Links -->
+      <section class="content-box">
+        <h2>Explore More</h2>
+        <div class="features">
+          <a href="product-info.html" class="feature-box">Product Info</a>
+          <a href="real-time-supply.html" class="feature-box">Supply Overview</a>
+          <a href="recommendations.html" class="feature-box">Recommendations</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

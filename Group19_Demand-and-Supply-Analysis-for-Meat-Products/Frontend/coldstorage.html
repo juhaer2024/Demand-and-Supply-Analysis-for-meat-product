@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cold Storage Dashboard</title>
+  <link rel="stylesheet" href="coldstorage_style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="logo.png" alt="MeatFlow Logo" />
+        <h2>MeatFlow</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="homepage.html">Home</a>
+        <a href="supply.html">Supply</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="coldstorage.html" class="active">Cold Storage</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="container">
+      <h1>Cold Storage Overview</h1>
+
+      <!-- Card Layout -->
+      <div class="storage-cards">
+        <div class="storage-card">
+          <h2>Storage ID: CS-001</h2>
+          <p>📍 Location: Dhaka Central</p>
+          <p>📦 Capacity: 10,000 kg</p>
+        </div>
+        <div class="storage-card">
+          <h2>Storage ID: CS-002</h2>
+          <p>📍 Location: Chattogram Depot</p>
+          <p>📦 Capacity: 8,000 kg</p>
+        </div>
+        <div class="storage-card">
+          <h2>Storage ID: CS-003</h2>
+          <p>📍 Location: Rajshahi Plant</p>
+          <p>📦 Capacity: 12,500 kg</p>
+        </div>
+      </div>
+
+      <!-- Table Layout -->
+      <table>
+        <thead>
+          <tr>
+            <th>Storage ID</th>
+            <th>Location</th>
+            <th>Capacity (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CS-001</td>
+            <td>Dhaka Central</td>
+            <td>10,000</td>
+          </tr>
+          <tr>
+            <td>CS-002</td>
+            <td>Chattogram Depot</td>
+            <td>8,000</td>
+          </tr>
+          <tr>
+            <td>CS-003</td>
+            <td>Rajshahi Plant</td>
+            <td>12,500</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</body>
+</html>

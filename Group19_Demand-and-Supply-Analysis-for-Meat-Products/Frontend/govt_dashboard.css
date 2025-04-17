@@ -1,0 +1,241 @@
+/* Reset & Base */
+{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d32f2f;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Header */
+header {
+  background-color: #000;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #d32f2f;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-items a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-items a:hover {
+  background-color: #d32f2f;
+}
+
+/* Buttons */
+.btn-secondary {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+  background-color: #b71c1c;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+  background: #1a1a1a;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff10;
+}
+
+.dashboard-section h2 {
+  color: #d32f2f;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #d32f2f;
+  padding-bottom: 0.5rem;
+}
+
+/* Tables */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  border: 1px solid #ffffff22;
+}
+
+.data-table th {
+  background: #d32f2f;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.data-table td {
+  background: #111;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.data-table tr:nth-child(even) td {
+  background: #161616;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.add-button {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-button:hover {
+  background-color: #b71c1c;
+  transform: scale(1.05);
+}
+
+/* Action Buttons */
+.action-button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  margin-right: 0.25rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button.edit:hover {
+  background-color: #ffa000;
+}
+
+.action-button.delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  z-index: 1000;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #d32f2f;
+  cursor: pointer;
+}
+
+/* Forms */
+form label {
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #000;
+  border: 1px solid #ffffff44;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #b71c1c;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #d32f2f;
+  margin-top: auto;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Farmer Dashboard | MeatFlow</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="farmerdashboard_style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <img src="logo.png" alt="MeatFlow logo" class="nav-logo"/>
+      <ul class="menu">
+        <li><a href="homepage.html">Home</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html" class="btn secondary-btn">SignOut</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Welcome, Farmer</h1>
+        <p>Manage your meat production efficiently with real-time tools and expert insights.</p>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2 class="section-title">Dashboard Features</h2>
+      <div class="feature-grid">
+        <a href="marketprice.html" class="feature-card">
+          <i class="fa-solid fa-chart-line icon"></i>
+          <h3>Market Prices</h3>
+          <p>Check current meat prices to sell smart.</p>
+        </a>
+        <a href="personalized_recommendations.html" class="feature-card">
+          <i class="fa-solid fa-lightbulb icon"></i>
+          <h3>Recommendations</h3>
+          <p>Get advice based on your farm data and issues.</p>
+        </a>
+        <a href="#directory" class="feature-card">
+          <i class="fa-solid fa-building icon"></i>
+          <h3>Slaughterhouse Directory</h3>
+          <p>Find approved and nearby slaughterhouses.</p>
+        </a>
+        <a href="#problem" class="feature-card">
+          <i class="fa-solid fa-triangle-exclamation icon"></i>
+          <h3>Report Problem</h3>
+          <p>Submit meat production issues to Govt Officers.</p>
+        </a>
+        <a href="#livestock" class="feature-card">
+          <i class="fa-solid fa-cow icon"></i>
+          <h3>Livestock Information</h3>
+          <p>Monitor your livestock's health and productivity.</p>
+        </a>
+        <a href="#farmer" class="feature-card">
+          <i class="fa-solid fa-user icon"></i>
+          <h3>Farmer Information</h3>
+          <p>Update your personal and farm details.</p>
+        </a>
+        <a href="#weather" class="feature-card">
+          <i class="fa-solid fa-cloud-sun icon"></i>
+          <h3>Weather Information</h3>
+          <p>Stay updated with the latest weather forecasts.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="livestock" class="livestock-section">
+      <h2>Livestock Information</h2>
+      <div class="livestock-info">
+        <p>Details about your livestock's health, production, and other vital statistics will be displayed here.</p>
+        <!-- Add code here to display livestock data -->
+      </div>
+    </section>
+
+    <section id="farmer" class="farmer-section">
+      <h2>Farmer Information</h2>
+      <div class="farmer-info">
+        <p>Update your personal and farm-related information here.</p>
+        <!-- Add code here for farmer information form -->
+      </div>
+    </section>
+
+    <section id="weather" class="weather-section">
+      <h2>Weather Information</h2>
+      <div class="weather-info">
+        <p>View current and forecasted weather conditions for your area here.</p>
+        <!-- Add code here to display weather data -->
+      </div>
+    </section>
+
+    <section id="problem" class="problem-section">
+      <h2>Submit Your Problem</h2>
+      <form class="problem-form">
+        <label for="farmerID">Farmer ID</label>
+        <input type="text" id="farmerID" required>
+
+        <label for="meatType">Meat Type</label>
+        <input type="text" id="meatType" required>
+
+        <label for="issue">Describe Problem</label>
+        <textarea id="issue" rows="4" required></textarea>
+
+        <button type="submit" class="submit-button">Submit Problem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MeatFlow. All rights reserved.</p>
+  </footer>
+</body>
+</html>

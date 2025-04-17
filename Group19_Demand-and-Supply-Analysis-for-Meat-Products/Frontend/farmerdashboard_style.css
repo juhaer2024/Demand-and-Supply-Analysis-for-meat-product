@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #ff0000; /* Red headings */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000; /* Black background */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 50px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.auth-buttons .btn {
+  background-color: #ff0000; /* Red button */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #333; /* Dark grey background */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: #444; /* Dark grey background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.feature-card:hover {
+  background-color: #555; /* Lighter grey on hover */
+}
+
+.feature-card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Problem Section */
+.problem-section {
+  background-color: #222; /* Darker grey background */
+  padding: 40px 20px;
+}
+
+.problem-form {
+  background-color: #333; /* Dark grey background */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.problem-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.problem-form input,
+.problem-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #ff0000; /* Red button */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Footer */
+footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 20px;
+}

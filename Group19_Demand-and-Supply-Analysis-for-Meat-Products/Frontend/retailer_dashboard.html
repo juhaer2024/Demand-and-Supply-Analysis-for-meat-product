@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retailer Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #1a1a1a;
+      padding: 30px 20px;
+      height: 100vh;
+      position: fixed;
+    }
+
+    .sidebar h2 {
+      color: #e50914;
+      margin-bottom: 40px;
+    }
+
+    .sidebar a {
+      color: white;
+      display: block;
+      margin: 20px 0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .sidebar a:hover {
+      color: #e50914;
+    }
+
+    .main {
+      margin-left: 240px;
+      padding: 30px;
+      flex: 1;
+    }
+
+    .header {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #e50914;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(229, 9, 20, 0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      color: #e50914;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #e50914;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: #1f1f1f;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .product-card h4 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .product-card span {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .graph {
+      margin-top: 40px;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      color: #aaa;
+    }
+
+    /* User Management Section Styles */
+    .user-management {
+      margin-top: 40px;
+    }
+
+    .user-management table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .user-management th, .user-management td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #444;
+    }
+
+    .user-management th {
+      background-color: #e50914;
+      color: white;
+    }
+
+    .user-management tr:hover {
+      background-color: #333;
+    }
+
+    .btn {
+      background-color: #e50914;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff2c2c;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        display: none;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>Retailer Dashboard</h2>
+    <a href="homepage.html">Home</a>
+    <a href="order.html">Orders</a>
+    <a href="product_info.html">Products</a>
+    <a href="delivery.html">Delivery</a>
+  </div>
+
+  <div class="main">
+    <div class="header">Retailer Dashboard</div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Total Orders</h3>
+        <p>1,320 orders</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>Tk. 3,85,000</p>
+      </div>
+      <div class="card">
+        <h3>Low Stock Items</h3>
+        <p>4 products low</p>
+      </div>
+      <div class="card">
+        <h3>Pending Deliveries</h3>
+        <p>12 deliveries</p>
+      </div>
+    </div>
+
+    <div class="section-title">Top Products</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <h4>Beef</h4>
+        <span>Sold: 280 kg</span>
+      </div>
+      <div class="product-card">
+        <h4>Chicken</h4>
+        <span>Sold: 120 kg</span>
+      </div>
+      <div class="product-card">
+        <h4>Mutton</h4>
+        <span>Sold: 85 kg</span>
+      </div>
+      <div class="product-card">
+        <h4>Lamb</h4>
+        <span>Sold: 40 kg</span>
+      </div>
+    </div>
+
+    <div class="graph">
+      <h3>Sales Graph (Placeholder)</h3>
+      <p>[Graph here using Chart.js or other JS lib]</p>
+    </div>
+
+    <!-- User Management Section -->
+    <div class="user-management">
+      <div class="header">Manage Retailers</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Retailer 1</td>
+            <td>retailer1@email.com</td>
+            <td>Active</td>
+            <td><button class="btn">Remove</button></td>
+          </tr>
+          <tr>
+            <td>Retailer 2</td>
+            <td>retailer2@email.com</td>
+            <td>Inactive</td>
+            <td><button class="btn">Activate</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top: 20px;">
+        <button class="btn">Add New Retailer</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

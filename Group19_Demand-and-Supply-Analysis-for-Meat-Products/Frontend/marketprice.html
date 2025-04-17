@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meat Market Prices</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="marketprice_style.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <img src="logo.png" alt="MeatFlow Logo" />
+        <h2>MeatFlow</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="homepage.html">Home</a>
+        <a href="product_info.html">Product Information</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="analytics.html">Analytics</a>
+        <a href="marketprice.html" class="active">Market Prices</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-container">
+      <header class="header">
+        <h1>Meat Market Prices</h1>
+        <nav class="navbar">
+          <a href="#all-product" onclick="scrollToTable()">All Products</a>
+          <button class="btn-add" onclick="toggleAddNewProduct()">Add New Product</button>
+        </nav>
+      </header>
+
+      <section class="all-product" id="all-product">
+        <video autoplay muted loop playsinline class="background-video">
+          <source src="background.mp4" type="video/mp4" />
+        </video>
+        <div class="content">
+          <h3>Meat Market Information</h3>
+          <p>Track current and historical market prices and trends for <span>meat products</span>.</p>
+        </div>
+      </section>
+
+      <section class="all-product" id="all-product">
+        <h1 class="heading"> All <span>products</span> </h1>
+      </section>
+
+      <!-- Add New Product -->
+      <section id="add-new-product" style="display: none; margin-top: 2rem;">
+        <h2>Add New Product</h2>
+        <form id="new-product-form">
+          <label for="product-name">Product Name:</label>
+          <input type="text" id="product-name" placeholder="Enter product name" required><br><br>
+
+          <label for="product-price">Price:</label>
+          <input type="number" id="product-price" placeholder="Enter product price" required><br><br>
+
+          <label for="product-unit">Unit:</label>
+          <input type="text" id="product-unit" placeholder="e.g., 1 KG, 1 PCS" required><br><br>
+
+          <label for="product-image">Image URL:</label>
+          <input type="url" id="product-image" placeholder="Enter image URL"><br><br>
+
+          <button type="button" onclick="addNewProduct()">Add Product</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+
+      <!-- Product Table -->
+      <section id="product-table" class="price-table">
+        <div class="search-and-add">
+          <input type="text" id="search-box" placeholder="Search meat..." oninput="searchProduct()">
+          <button class="btn-add" onclick="toggleAddNewProduct()">Add New Product</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Meat Product</th>
+              <th>Price</th>
+              <th>Unit</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr><td>1</td><td>Chicken</td><td>220</td><td>1 KG</td><td><input type="checkbox"> View</td></tr>
+            <tr><td>2</td><td>Beef</td><td>650</td><td>1 KG</td><td><input type="checkbox"> View</td></tr>
+            <tr><td>3</td><td>Mutton</td><td>850</td><td>1 KG</td><td><input type="checkbox"> View</td></tr>
+            <tr><td>4</td><td>Fish</td><td>300</td><td>1 KG</td><td><input type="checkbox"> View</td></tr>
+          </tbody>
+        </table>
+        <div id="product-info" style="display: none; margin-top: 20px;"></div>
+      </section>
+
+      <!-- Historical Chart -->
+      <section class="historical-data" id="historical-data">
+        <h1 class="heading">Historical <span>Market Prices</span></h1>
+        <p class="description">Track changes in market prices for various meat products over time.</p>
+        <div class="chart-container">
+          <canvas id="meatPriceChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Boxes -->
+      <section class="box-container">
+        <div class="box"><img src="chicken.jpg" class="product-image"><h3>CHICKEN</h3><h3>1KG = 220TK</h3></div>
+        <div class="box"><img src="beef.jpg" class="product-image"><h3>BEEF</h3><h3>1KG = 650TK</h3></div>
+        <div class="box"><img src="mutton.jpg" class="product-image"><h3>MUTTON</h3><h3>1KG = 850TK</h3></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="Meat.js"></script>
+</body>
+</html>
+

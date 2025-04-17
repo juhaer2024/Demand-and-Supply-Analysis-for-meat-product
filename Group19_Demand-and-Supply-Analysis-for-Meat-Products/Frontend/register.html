@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="register.php" method="POST">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <i class='bx bxs-phone'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Email" required>
+                <i class='bx bxs-envelope'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="address" placeholder="Address" required>
+                <i class='bx bxs-home'></i>
+            </div>
+            <div class="input-box">
+                <select name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+            <div class="input-box">
+                <select name="user_type" id="userType" required onchange="toggleOfficerFields()">
+                    <option value="" disabled selected>Select User Type</option>
+                    <option value="Farmer">Farmer</option>
+                    <option value="Officer">Govt.Officer</option>
+                    <option value="Customer">Customer</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Farmer">Slaughter House Staff</option>
+                    <option value="Farmer">Coldstorage Manager</option>
+                    <option value="Farmer">Retailer</option>
+                    <option value="Farmer">Wholesaler</option>
+                    <option value="Farmer">Deliveryman</option>
+                </select>
+            </div>
+
+            <!-- Officer-Specific Fields -->
+            <div id="officerFields" class="officer-fields" style="display: none;">
+                <div class="input-box">
+                    <input type="text" name="position_title" placeholder="Position Title">
+                    <i class='bx bxs-briefcase'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="department" placeholder="Department">
+                    <i class='bx bxs-building'></i>
+                </div>
+                <div class="input-box">
+                    <textarea name="responsibilities" placeholder="Responsibilities" rows="3"></textarea>
+                    <i class='bx bxs-task'></i>
+                </div>
+                <div class="input-box">
+                    <select name="availability">
+                        <option value="" disabled selected>Select Availability</option>
+                        <option value="1">Available</option>
+                        <option value="0">Not Available</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Register</button>
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+    <script>
+        // JavaScript to toggle the officer-specific fields
+        function toggleOfficerFields() {
+            var userType = document.getElementById("userType").value;
+            var officerFields = document.getElementById("officerFields");
+
+            if (userType === "Officer") {
+                officerFields.style.display = "block"; // Show officer fields
+                // Add 'required' attribute to Officer-specific fields
+                officerFields.querySelectorAll("input, textarea, select").forEach(function (field) {
+                    field.required = true;
+                });
+            } else {
+                officerFields.style.display = "none"; // Hide officer fields
+                // Remove 'required' attribute from Officer-specific fields
+                officerFields.querySelectorAll("input, textarea, select").forEach(function (field) {
+                    field.required = false;
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
