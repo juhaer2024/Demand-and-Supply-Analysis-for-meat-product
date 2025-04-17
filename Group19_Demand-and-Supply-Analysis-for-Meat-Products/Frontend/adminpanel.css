@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header Styles */
+.main-header {
+  background-color: #111;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.nav-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff3c3c;
+}
+
+.nav-items {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items li {
+  margin-left: 20px;
+}
+
+.nav-items li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-items li a:hover,
+.nav-items li a.active {
+  color: #ff3c3c;
+}
+
+/* Dashboard Section */
+.dashboard {
+  margin-top: 30px;
+}
+
+.overview-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.overview-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 23%;
+  text-align: center;
+}
+
+.overview-card h3 {
+  font-size: 22px;
+  color: #ff3c3c;
+}
+
+.overview-card p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Section Titles */
+h2 {
+  color: #ff3c3c;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+table th {
+  background-color: #222;
+  color: #fff;
+}
+
+table td {
+  background-color: #111;
+  color: #fff;
+}
+
+button {
+  background-color: #ff3c3c;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e02a2a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overview-cards {
+    flex-direction: column;
+  }
+
+  .overview-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
