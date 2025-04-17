@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wholesaler Dashboard | MeatFlow</title>
+  <link rel="stylesheet" href="wholesaler_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <img src="logo.png" alt="MeatFlow Logo" class="logo">
+      <h2 class="title">MeatFlow</h2>
+      <nav>
+        <ul>
+          <li><a href="homepage.html"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="product_info.html"><i class="fas fa-drumstick-bite"></i> Product Info</a></li>
+          <li><a href="supply.html"><i class="fas fa-warehouse"></i> Supply</a></li>
+          <li><a href="delivery.html"><i class="fas fa-truck"></i> Delivery</a></li>
+          <li><a href="marketprice.html"><i class="fas fa-chart-line"></i> Market Prices</a></li>
+          <li><a href="analytics.html"><i class="fas fa-chart-pie"></i> Analytics</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Wholesaler Dashboard</h1>
+        <p>Welcome back! Here is your real-time overview of product supply, pricing, and delivery status.</p>
+      </header>
+
+      <!-- Stats Cards -->
+      <section class="stats">
+        <div class="card">
+          <h3>Total Products</h3>
+          <p>22</p>
+        </div>
+        <div class="card">
+          <h3>Available Stock</h3>
+          <p>15,800 kg</p>
+        </div>
+        <div class="card">
+          <h3>Ongoing Deliveries</h3>
+          <p>6</p>
+        </div>
+        <div class="card">
+          <h3>New Orders</h3>
+          <p>5</p>
+        </div>
+      </section>
+
+      <!-- Inventory Table -->
+      <section class="content-box">
+        <h2>Inventory Summary</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity (kg)</th>
+              <th>Status</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Beef</td>
+              <td>5,000</td>
+              <td>Available</td>
+              <td>2025-04-17</td>
+            </tr>
+            <tr>
+              <td>Chicken</td>
+              <td>3,500</td>
+              <td>Available</td>
+              <td>2025-04-17</td>
+            </tr>
+            <tr>
+              <td>Mutton</td>
+              <td>2,800</td>
+              <td>Available</td>
+              <td>2025-04-17</td>
+            </tr>
+            <tr>
+              <td>Fish</td>
+              <td>4,500</td>
+              <td>Low</td>
+              <td>2025-04-17</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Link to Add Product or View More -->
+      <section class="content-box">
+        <h2>Actions</h2>
+        <a href="product_info.html" class="action-btn">View Product Info</a>
+        <a href="delivery.html" class="action-btn">Track Deliveries</a>
+        <a href="analytics.html" class="action-btn">See Analytics</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
