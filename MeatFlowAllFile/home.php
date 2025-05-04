@@ -82,7 +82,7 @@
                     <i class="fa-solid fa-database"></i>
                 </div>
                 <ul class="nav-items">
-                    <li><a href="login.php" class="btn-secondary">Sign in</a></li>
+                    <li><a href="login2.php" class="btn-secondary">Sign in</a></li>
                     <li><a href="contact.php" class="btn-primary">Get in touch</a></li>
                 </ul>
             </div>
